@@ -146,17 +146,16 @@ body {
   left: 0;
 }
 
-
-@media (max-width:600px){
-  body{
-    font-size: .9rem;
-    padding: .6em;
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
+    padding: 0.6em;
   }
 
-  .questions-wrapper{
+  .questions-wrapper {
     border: 2px solid blue;
     margin: 0;
-    padding: .3em;
+    padding: 0.3em;
     width: 100%;
   }
 
@@ -164,18 +163,17 @@ body {
     font-size: 1rem;
   }
 
-  .answer-btn{
-    margin: 1em .2em;
-    font-size: .7rem;
+  .answer-btn {
+    margin: 1em 0.2em;
+    font-size: 0.7rem;
   }
 
-  .blob{
+  .blob {
     display: none;
   }
 
-  .questions-container{
+  .questions-container {
     width: 100%;
     border: 1px solid red;
   }
-
 }

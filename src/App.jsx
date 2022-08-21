@@ -50,8 +50,7 @@ function App() {
     getData();
   }, []);
 
-
-  console.log(quizData)
+  console.log(quizData);
 
   // Questions Component
   const quizElements =
@@ -72,28 +71,31 @@ function App() {
 
   // testing function
   function inCorrectButtonsBg(id) {
-  
+    console.log(id);
   }
 
   // testing function
   function correctButtonsBg(id) {
     // let newArray=[]
-    // console.log(id,quizData[0].correct_answer[0].id,!quizData[0].correct_answer[0].isSelected)
-    setQuizData(prevQuizData=> {
-      let newArray=[]
-      return prevQuizData.map((quiz,i)=> {
-        if(prevQuizData[i].correct_answer[i].id === id){
-          // ????????? 🤐
-          newArray.push({...quiz,
-             prevQuizData[i].correct_answer[i].isSelected : !prevQuizData.correct_answer[i].isSelected })
-        }else {
-          newArray.push(quiz)
-        }
-          return newArray
-      })
-    })
+    console.log(
+      id,
+      quizData[0].correct_answer[0].id,
+      !quizData[0].correct_answer[0].isSelected
+    );
+    // setQuizData(prevQuizData=> {
+    //   let newArray=[]
+    //   return prevQuizData.map((quiz,i)=> {
+    //     if(prevQuizData[i].correct_answer[i].id === id){
+    //       // ????????? 🤐 problem
+    //       newArray.push({...quiz,
+    //          prevQuizData[i].correct_answer[i].isSelected : !prevQuizData.correct_answer[i].isSelected })
+    //     }else {
+    //       newArray.push(quiz)
+    //     }
+    //       return newArray
+    //   })
+    // })
   }
-
 
   return (
     <div>
